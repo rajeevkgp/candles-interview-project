@@ -6,6 +6,9 @@ Here, you will create the API handler for the `/candles` endpoint and implement 
 solution for candle data.
 
 ## Notes
+
+- Please use the function skeleton in `src/api_handler.py` as the basis for your handler.
+  
 - You will only need to fetch candles from Coinbase via their REST API. 
   The endpoint is documented [here](https://docs.pro.coinbase.com/#get-historic-rates).
   
