@@ -14,13 +14,13 @@ services:
       - default
 
   postgres:
-    container_name: fpg-postgres
-    image: postgres:13.3
-    restart: on-failure
-    ports:
-      - "5433:5432"
-    networks:
-      - default
+    image: postgres
+    volumes:
+      - /var/run/postgresql:/var/run/postgresql
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
 
   redis:
     container_name: fpg-redis
