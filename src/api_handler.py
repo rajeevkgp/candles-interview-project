@@ -11,5 +11,5 @@ def get_candle_data(
     This is the API handler for the /candles endpoint.
 
     start/end_utc_datetime should be ISO 8601 formatted datetime strings, for example
-    2014-11-06T10:34:47.123456Z.
+    2014-11-06T10:34:47.123456.
     """
