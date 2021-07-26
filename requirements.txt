@@ -1,0 +1,5 @@
+requests
+peewee
+psycopg2-binary
+pytest
+SQLAlchemy

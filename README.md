@@ -17,10 +17,12 @@ solution for candle data.
 
 - You can find a list of all supported currency pairs in `supported_currency_pairs.json`.
 
-- If you need a database or cache, you can start them with docker compose: 
+- You can find a set of functions to convert datetime objects into UTC datetime strings and 
+  Unix timestamps in `lib/datetime_utils.py`.
+
+- If you need a database, you can use SQLite or Postgres. You can start a postgres
+  server with docker compose: 
   - `docker-compose up postgres`
-  - `docker-compose up dynamo`
-  - `docker-compose up redis`
 
 - You don't need to validate the inputs to your API handler. If we have time, we may ask to either
   implement that validation later or discuss how you would go about it.
@@ -29,4 +31,3 @@ solution for candle data.
   initially assume that every request to your handler will ask for less than five hours worth 
   of candles. If you make good progress, we may then ask you to implement a version that fetches 
   a month or more worth of candles.
-
